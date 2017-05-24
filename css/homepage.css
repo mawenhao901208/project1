@@ -1,0 +1,18 @@
+#banner {
+	width:1920;
+	margin: 0 auto;
+}
+#banner .bannerlist{
+	
+	width: 1920px;
+	height: 520px;
+}
+#banner .bannerlist li{
+	position: absolute;
+}
+#banner .bannerlist li img{
+	width: 100%;
+	height: 520px;
+	margin-left:;
+	
+}
