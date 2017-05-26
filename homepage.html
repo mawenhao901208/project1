@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/homepage.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script src="js/homepage.js"></script>
+		<script src="js/common.js"></script>
+		
 	</head>
 	<body>
 		<!--------------------------top-------------------------------------------->
 		<div id="top">
 			<div class="top-con">
 				<ul class="top-nav2">
-					<li><a href="">个人中心</a></li>
-					<li><a href="">合作渠道</a><span>&#xe635;</span></li>
-					<li><a href="">帮助中心</a><span>&#xe635;</span></li>
-					<li><a href="">手机版</a><span>&#xe635;</span></li>
+					<li class="top-nav2-ls"><a href="">个人中心</a></li>
+					<li><a href="">合作渠道</a><span>&#xe635;</span>
+						<ul class="top-nav2-list1">
+							<li><a href="">大客户通道</a></li>
+							<li><a href="">lepar</a></li>
+							<li><a href="">销售联盟</a></li>
+						</ul>
+					</li>
+					<li><a href="">帮助中心</a><span>&#xe635;</span>
+						<ul class="top-nav2-list1">
+							<li><a href="">配送安装</a></li>
+							<li><a href="">售后服务</a></li>
+							<li><a href="">运费标准</a></li>
+							<li><a href="">联系客服</a></li>
+						</ul>
+					</li>
+					<li><a href="">手机版</a><span>&#xe635;</span>
+						<ul class="wei">
+							<li><img src="imgs/wei1.jpg"/><span>扫码下载APP</span></li>
+							<li><img src="imgs/wei2.jpg"/><span>扫码下载微商城</span></li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="top-nav1">
 					<li><a href="">登录</a>|</li>
@@ -25,20 +46,114 @@
 		</div>
 		<!--------------------------------------------header--------------------------->
 		<div id="header">
-			<div class="logo">
-				<h1><a href="javasript:;"><img src="imgs/logo.jpg"/></a></h1>
+			<div class="header1">
+				<div class="logo">
+					<h1><a href="javasript:;"><img src="imgs/logo.jpg"/></a></h1>
+				</div>
+				<div class="header-con">
+					<ul class="header-nav">
+						<li><a href="javasript:;">手机·乐pro3系列</a></li>
+						<li><a href="javasript:;">电视·热卖系列</a></li>
+						<li><a href="javasript:;">MFL·智能系列</a></li>
+					</ul>
+				</div>
+				
+				<div class="header-searchbox">
+					<input type="text" value="超4 XX55M" name="search"/><span>&#xe607;</span><span>&#xe626;</span>
+					<ul class="search-list">
+						<li><a href="">超4 X40M</a></li>
+						<li><a href="">乐pro3</a></li>
+						<li><a href="">运动蓝牙耳机</a></li>
+						<li><a href="">乐视盒子U4</a></li>
+						<li><a href="">变形金刚</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="header-con">
-				<ul class="header-nav">
-					<li><a href="javasript:;">手机·乐pro3系列</a></li>
-					<li><a href="javasript:;">电视·热卖系列</a></li>
-					<li><a href="javasript:;">MFL·智能系列</a></li>
-				</ul>
+			<div id="header-layer">
+				<div class="layer layer1">
+					<div class="header-nav1">
+						<ul class="header-nav1-list">
+							<li><img src="imgs/8.jpg"/>
+								<p>乐Pro3双摄A版</p>
+								<span>￥1799</span>
+							</li>
+							<li><img src="imgs/9.jpg"/>
+								<p>乐Pro3精英版</p>
+								<span>￥1499</span>
+							</li>
+							<li><img src="imgs/10.jpg"/>
+								<p>乐Pro3 标准版6G+64G</p>
+								<span>￥1999</span>
+							</li>
+							<li><img src="imgs/11.jpg"/>
+								<p>乐Pro3 张艺谋版</p>
+								<span>￥2499</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="layer">
+					<div class="header-nav1 tv">
+						<ul class="header-nav1-list">
+							<li><img src="imgs/tv1.jpg"/>
+								<p>超4 X55</p>
+								<span>￥3889</span>
+							</li>
+							<li><img src="imgs/tv2.jpg"/>
+								<p>超4 X43</p>
+								<span>￥2399</span>
+							</li>
+							<li><img src="imgs/tv3.jpg"/>
+								<p>超4 X40</p>
+								<span>￥2249</span>
+							</li>
+							<li><img src="imgs/tv4.jpg"/>
+								<p>超4 X50M</p>
+								<span>￥3099</span>
+							</li>
+							<li><img src="imgs/tv5.jpg"/>
+								<p>超4 MX65</p>
+								<span>￥7999</span>
+							</li>
+							<li><img src="imgs/tv6.jpg"/>
+								<p>超4 X70</p>
+								<span>￥9999</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="layer">
+					<div class="header-nav1 tv">
+						<ul class="header-nav1-list">
+							<li><img src="imgs/mlf1.jpg"/>
+								<p>乐视无线家庭音响</p>
+								<span>￥1299</span>
+							</li>
+							<li><img src="imgs/mlf2.jpg"/>
+								<p>乐视蓝牙耳机</p>
+								<span>￥199</span>
+							</li>
+							<li><img src="imgs/mlf3.jpg"/>
+								<p>乐视k歌智能麦克风</p>
+								<span>￥1999</span>
+							</li>
+							<li><img src="imgs/mlf4.jpg"/>
+								<p>leme蓝牙耳机EB30</p>
+								<span>￥99</span>
+							</li>
+							<li><img src="imgs/mlf5.jpg"/>
+								<p>乐视超级移动电源</p>
+								<span>￥99</span>
+							</li>
+							<li><img src="imgs/mlf6.jpg"/>
+								<p>乐视3D体感摄像头</p>
+								<span>￥99</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="header-searchbox">
-				<input type="text" placeholder="超4 XX55M" name="search"/><span>&#xe607;</span><span>&#xe626;</span>
-			</div>
-			<div class="clear"></div>
 		</div>
 		<!----------------------------banner---------------->
 		<div id="banner">
@@ -49,14 +164,310 @@
 				<li><a href=""><img src="imgs/img4.jpg"/></a></li>
 				<li><a href=""><img src="imgs/img5.jpg"/></a></li>
 			</ul>
-			<ul class="banner-nav">
-				<li><a href="">超级电视</a></li>
-				<li><a href="">超级手机</a></li>
-				<li><a href="">智能硬件</a></li>
-				<li><a href="">会员</a></li>
-				<li><a href="">金融</a></li>
-				<li><a href="">娱乐周边</a></li>
-			</ul>
+			<div class="banner-left">
+				<ul class="banner-nav">
+					<li><a href="">超级电视</a><span>&#xe65f;</span></li>
+					<li><a href="">超级手机</a><span>&#xe65f;</span></li>
+					<li><a href="">智能硬件</a><span>&#xe65f;</span></li>
+					<li><a href="">会员</a><span>&#xe65f;</span></li>
+					<li><a href="">金融</a><span>&#xe65f;</span></li>
+					<li><a href="">娱乐周边</a><span>&#xe65f;</span></li>
+				</ul>
+			</div>
+		</div>
+		<!----------------------------------------------content---------------->
+		<div id="content">
+			<div class="content">
+				<div class="con-top">
+					<div class="con-top1">
+						<ul class="con-top1-nav1">
+							<li><img src="imgs/img6.jpg" /></li>
+							<li><img src="imgs/img7.jpg"/></li>
+							<li><img src="imgs/img8.jpg"/></li>
+							<li><img src="imgs/img9.jpg"/></li>
+						</ul>
+					</div>
+					<div class="con-top2">
+						<h2>热卖推荐</h2>
+						<div class="con-top2-btn">
+							<span>&#xe660;</span>
+							<span>&#xe65f;</span>
+						</div>
+						<div class="con-top2-hot">
+							<div class="con-top2-hot1">
+								<ul class="con-top2-list1">
+									<li>
+										<a href="">
+											<img src="imgs/img10.jpg"/>
+											<h3>超4 X55</h3>
+											<p class="intro">HDR 3GB大存储 超薄电视</p>
+											<p class="price">￥2399 起</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="con-middle">
+					<div class="con-middle1">
+						<a href="">
+							<div class="pic"><img src="imgs/img15.jpg"/></div>
+							<div class="con-middle-syno">
+								<p class="title">乐 PRO3 双摄AL版</p>
+								<p class="intro">暗夜黑 新品首发</p>
+								<span class="price">￥1799 起</span>
+							</div>
+						</a>
+					</div>
+					<div class="con-middle2">
+						<a href="">
+							<div class="pic"><img src="imgs/img16.jpg"/></div>
+							<div class="con-middle-syno">
+								<p class="title">超4 X55M</p>
+								<p class="intro">会员续杯可达5年 共赚1770元</p>
+								<span class="price">￥4379</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="con-bottom">
+					<ul class="con-bottom-list">
+						<li>
+							<a href="">
+								<div class="pic"><img src="imgs/img17.jpg"/></div>
+								<div class="con-bottom-syno">
+									<p class="title">乐视超级自行车</p>
+									<p class="intro">城市化智能自行车</p>
+									<span class="price">￥3999</span>
+								</div>	
+							</a>
+						</li>
+						<li >
+							<a href="">
+								<div class="pic"><img src="imgs/img18(1).jpg"/></div>
+								<div class="con-bottom-syno">
+									<p class="title">娱乐周边</p>
+									<p class="intro">迪斯尼周边热卖</p>
+									<span class="price">查看更多</span>
+								</div>	
+							</a>
+							<a href="" class="con-bottom-list-ls2">
+								<div class="pic"><img src="imgs/img18.jpg"/></div>
+								<div class="con-bottom-syno">
+									<p class="title">超级汽车</p>
+									<p class="intro">共享未来交通生态</p>
+									<span class="price">查看详情</span>
+								</div>	
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="pic"><img src="imgs/img19.jpg"/></div>
+								<div class="con-bottom-syno">
+									<p class="title">乐视双向移动电源 M1</p>
+									<p class="intro">真芯快充“反正”就是快</p>
+									<span class="price">￥99</span>
+								</div>	
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="pic"><img src="imgs/img20.jpg"/></div>
+								<div class="con-bottom-syno1">
+									<p class="title">乐视会员</p>
+									<p class="intro">热门影视 高清内容<br>智能加速 告别广告</p>
+								</div>	
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="pic"><img src="imgs/img21.jpg"/></div>
+								<div class="con-bottom-syno1">
+									<p class="title">金融理财</p>
+									<p class="intro">理财优选<br>"乐享其程"理财祝你享人生</p>
+								</div>	
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="pic"><img src="imgs/img22.jpg"/></div>
+								<div class="con-bottom-syno1">
+									<p class="title">以旧换新</p>
+									<p class="intro">购超级手机 超级电视<br />最高享200元补贴</p>
+								</div>	
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>	
+			</div>
+			<div class="news">
+				<div class="news-left news1">
+					<h4>生态头条</h4>
+					<ul class="news-list1 ">
+						<li><a href="">贾跃亭：历史转折！易到获北京首张C2C网约车牌照</a></li>
+						<li><a href="">超级电视生日快乐！5.16准备好迎接 4U 发布会的生日惊喜</a></li>
+						<li><a href="">《欢乐颂2》今晚乐视视频开播 原班人马再度回归</a></li>
+					</ul>
+				</div>
+				<div class="news-center news1">
+					<h4>商城公告</h4>
+					<ul class="news-list2">
+						<li><a href="">【公告】电视安装服务费用标准</a></li>
+						<li><a href="">【通知】参与调研中奖通知</a></li>
+						<li><a href="">【公告】414用户调研奖品发放通知</a></li>
+					</ul>
+				</div>
+				<div class="news-right">
+					<h4>关注我们</h4>
+					<ul class="ma">
+						<li>
+							<a href="">
+								<img src="imgs/wei1.jpg"/><br />
+								<span>扫码下载app</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/wei2.jpg"/><br />
+								<span>扫码访问微商城</span>
+							</a>
+						</li>
+						<li><a href="">
+								<img src="imgs/wei3.jpg"/><br />
+								<span>关注公众号</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="footer">
+				<div class="footer-top">
+					<ul class="footer-top-list">
+						<li><span>&#xe615;</span>正品保障</li>
+						<li><a href=""><span>&#xe6c5;</span>7天无理由退货</a></li>
+						<li><a href=""><span>&#xe64d;</span>满150包邮</a></li>
+						<li><a href=""><span>&#xe60b;</span>售后服务网店</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-con">
+						<div class="footer-con-link">
+							<h4>生态品类</h4>
+							<ul class="footer-con-list">
+								<li><a href="">超级电视</a></li>
+								<li><a href="">超级手机</a></li>
+								<li><a href="">智能硬件</a></li>
+								<li><a href="">娱乐周边</a></li>
+								<li><a href="">乐视会员</a></li>
+							</ul>
+						</div>
+						<div class="footer-con-link">
+							<h4>生态服务</h4>
+							<ul class="footer-con-list">
+								<li><a href="">生态头条</a></li>
+								<li><a href="">乐迷社区</a></li>
+								<li><a href="">比一比</a></li>
+								<li><a href="">问一问</a></li>
+							</ul>
+						</div>
+						<div class="footer-con-link">
+							<h4>帮助中心</h4>
+							<ul class="footer-con-list">
+								<li><a href="">新手入门</a></li>
+								<li><a href="">订单服务</a></li>
+								<li><a href="">物流服务</a></li>
+								<li><a href="">售后政策</a></li>
+								<li><a href="">安装保修</a></li>
+								<li><a href="">自助服务</a></li>
+							</ul>
+						</div>
+						<div class="footer-con-link">
+							<h4>服务支持</h4>
+							<ul class="footer-con-list">
+								<li><a href="">线下体验厅</a></li>
+								<li><a href="">线下lepar店</a></li>
+								<li><a href="">售后服务网点</a></li>
+								<li><a href="">售后联盟</a></li>
+								<li><a href="">分享邀请</a></li>
+								<li><a href="">乐码通道</a></li>
+							</ul>
+						</div>
+						<div class="footer-con-link">
+							<h4>关于乐视商城</h4>
+							<ul class="footer-con-list">
+								<li><a href="">公司介绍</a></li>
+								<li><a href="">联系我们</a></li>
+								<li><a href="">加入我们</a></li>
+								<li><a href="">关注我们</a></li>
+							</ul>
+						</div>
+						<div class="footer-con-right">
+							<p>
+								<strong>10010-9000</strong><br>
+								7*24小时客服电话
+							</p>
+							<div class="tel">在线客服8:00-22:00</div>
+						</div>
+						<div class="clear"></div>
+						<div class="web">
+							<h4>友情链接：</h4>
+							<ul class="web-list">
+								<li><a href="">乐视商城触屏版</a></li>
+								<li><a href="">乐视</a></li>
+								<li><a href="">乐视tv</a></li>
+								<li><a href="">乐视手机</a></li>
+								<li><a href="">乐视会员</a></li>
+								<li><a href="">乐视超级会员</a></li>
+								<li><a href="">乐2</a></li>
+								<li><a href="">乐2pro</a></li>
+								<li><a href="">乐MIX2</a></li>
+								<li><a href="">乐视云</a></li>
+								<li><a href="">车联网</a></li>
+								<li><a href="">乐视应用商店</a></li>
+								<li><a href="">播士网视频</a></li>
+								<li><a href="">温州视线</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">中国品牌网</a></li>
+								<li><a href="">百纳网</a></li>
+								<li><a href="">绿盟下载</a></li>
+								<li><a href="">寻购网</a></li>
+								<li><a href="">上海房产网</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+								<li><a href="">卡车之家</a></li>
+							</ul>
+						</div>
+						<div class="footer-footer">
+							<div class="country">
+								<ul class="country-list">
+									<li style="background: url(imgs/jingling2.png) -138px -21px no-repeat;"><a href="">Hong Kong</a></li>
+									<li style="background: url(imgs/jingling2.png) -138px -42px no-repeat;"><a href="">U S A</a></li>
+									<li style="background: url(imgs/jingling2.png) -138px -63px no-repeat;"><a href="">india</a></li>
+									<li style="background: url(imgs/jingling2.png) -138px -83px no-repeat;"><a href="">Russia</a></li>
+									<li style="background: url(imgs/jingling2.png) -138px -103px no-repeat;"><a href="">中国站</a><span>&#xe635;</span></li>
+								</ul>
+							</div>
+							<p>
+								Copyright © 2004-2017 乐视电子商务(北京)有限公司 All rights reserved. 
+								备案/许可证编号为：京ICP备16033412号-1 网络文化经营许可证文网文[2009]221号
+							</p>
+						</div>
+						<div class="clear"></div>
+					</div>	
+				</div>
+			
 		</div>
 	</body>
 </html>
